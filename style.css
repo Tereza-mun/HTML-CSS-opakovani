@@ -1,1 +1,124 @@
 /*------------Tady piš svoje stylování --------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.social-media {
+  width: 40%;
+}
+
+.card--sm,
+.card--wide {
+  width: 100%;
+}
+
+.date {
+  position: relative;
+}
+
+.date__busy {
+  position: absolute;
+  top: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.newsletter__article {
+  width: 100%;
+}
+
+.card--lg {
+  overflow-x: scroll;
+}
+
+.card--md {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .newsletter__image {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .social-media {
+    width: 30%;
+  }
+  .card--sm {
+    width: 49%;
+  }
+  .newsletter__article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+  }
+  .newsletter__image {
+    align-self: flex-start;
+  }
+  .newsletter__text {
+    width: 49%;
+  }
+  .card--md {
+    width: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-media {
+    width: 20%;
+  }
+  .newsletter__article {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+  }
+  .newsletter__image {
+    align-self: flex-start;
+  }
+  .newsletter__text {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-media {
+    width: 15%;
+  }
+  .newsletter__article {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+  }
+  .newsletter__image {
+    align-self: flex-start;
+  }
+  .newsletter__text {
+    width: 32%;
+  }
+  .card--wide {
+    width: 32%;
+    order: -1;
+  }
+  .card--md {
+    width: 32%;
+  }
+}
